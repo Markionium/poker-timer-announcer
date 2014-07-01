@@ -1,0 +1,27 @@
+{
+  "name": "poker-timer-announcer",
+  "version": "0.0.0",
+  "description": "Timer for poker parties with Olly.",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "event-stream": "3.1.x",
+    
+    "gulp": "3.8.x",
+    "gulp-autoprefixer": "0.0.x",
+    "gulp-clean": "0.3.x",
+    "gulp-connect": "2.0.x",
+    "gulp-karma": "0.0.x",
+    "gulp-ngmin": "0.3.x",
+    "gulp-ruby-sass": "0.5.x",
+    
+    "karma": "0.12.x",
+    "karma-chrome-launcher": "0.1.x",
+    "karma-jasmine": "0.1.x",
+    "karma-ng-html2js-preprocessor": "0.1.x",
+    "karma-phantomjs-launcher": "0.1.x",
+    "merge-stream": "0.1.x",
+    
+    "run-sequence": "0.3.x"
+  }
+}
