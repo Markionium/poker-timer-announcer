@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="http://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet" type="text/css">
+    <link href="app.css" rel="stylesheet" type="text/css" />
+
+    <title></title>
+</head>
+<body ng-app="poker-timer" ng-controller="appCtrl">
+    <div class="wrap">
+        <div class="timer">
+            <span class="seconds">{{timer.seconds}}</span><span class="milliseconds">{{timer.milliseconds}}</span>
+        </div>
+        <button ng-click="timer.pause()"></button>
+    </div>
+
+    <!-- Quake sounds -->
+    <audio id="announcerOne" preload="auto" src="audio/one.wav"></audio>
+    <audio id="announcerTwo" preload="auto" src="audio/two.wav"></audio>
+    <audio id="announcerThree" preload="auto" src="audio/three.wav"></audio>
+    <audio id="announcerOneMinute" preload="auto" src="audio/1_minute.wav"></audio>
+    <audio id="announcerFiveMinutes" preload="auto" src="audio/5_minute.wav"></audio>
+
+    <!-- Unreal sounds -->
+    <audio id="unrealcd1" preload="auto" src="audio/unreal/cd1.wav"></audio>
+    <audio id="unrealcd2" preload="auto" src="audio/unreal/cd2.wav"></audio>
+    <audio id="unrealcd3" preload="auto" src="audio/unreal/cd3.wav"></audio>
+    <audio id="unrealcd4" preload="auto" src="audio/unreal/cd4.wav"></audio>
+    <audio id="unrealcd5" preload="auto" src="audio/unreal/cd5.wav"></audio>
+    <audio id="unrealcd6" preload="auto" src="audio/unreal/cd6.wav"></audio>
+    <audio id="unrealcd7" preload="auto" src="audio/unreal/cd7.wav"></audio>
+    <audio id="unrealcd8" preload="auto" src="audio/unreal/cd8.wav"></audio>
+    <audio id="unrealcd9" preload="auto" src="audio/unreal/cd9.wav"></audio>
+    <audio id="unrealcd10" preload="auto" src="audio/unreal/cd10.wav"></audio>
+
+    <!-- Extra sounds -->
+    <audio id="godlike" preload="auto" src="audio/unreal/godlike.wav"></audio>
+    <audio id="humiliation" preload="auto" src="audio/humiliation.wav"></audio>
+    <audio id="impressive" preload="auto" src="audio/impressive.wav"></audio>
+    <audio id="excellent" preload="auto" src="audio/excellent.wav"></audio>
+    <audio id="failed" preload="auto" src="audio/unreal/failed.wav"></audio>
+    <audio id="dominating" preload="auto" src="audio/unreal/dominating.wav"></audio>
+    <audio id="headshot" preload="auto" src="audio/unreal/headshot.wav"></audio>
+    <audio id="winner" preload="auto" src="audio/unreal/winner.wav"></audio>
+    <audio id="lastplace" preload="auto" src="audio/unreal/lastplace.wav"></audio>
+    <audio id="rampage" preload="auto" src="audio/unreal/rampage.wav"></audio>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/moment/min/moment.min.js"></script>
+    <script src="vendor/angular/angular.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="app/timer-service.js"></script>
+</body>
+</html>

@@ -3,3 +3,6 @@ src/vendor
 
 .idea
 *.iml
+
+src/audio/**/*.wav
+.sass-cache

@@ -35,7 +35,7 @@ var files = [
 
 gulp.task('server', function() {
   return connect.server({
-    root: 'src/main/',
+    root: src_base,
     port: 8000
   });
 });
@@ -99,12 +99,8 @@ gulp.task('watch', function() {
         }));
 });
 
-gulp.task('make-css', function () {
+gulp.task('sass', function () {
     return gulp.src(src_base + 'app.sass')
         .pipe(sass())
         .pipe(gulp.dest(src_base));
-});
-
-gulp.task('sass', function () {
-   return runSequence('make-css', 'copy-app');
 });
